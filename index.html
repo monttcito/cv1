@@ -26,6 +26,10 @@
         <div class="header-text">
             <p>Ingeniero Eléctrico</p>
             <h1>Buenas, soy <br><span>Carlos Montoya</span></h1>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/montt0202/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/carlosmontoyam/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
     </div>
 </div>
@@ -40,6 +44,7 @@
                 <h1 class="sub-title">Sobre mi</h1>
                 <p>Titulado de Ingeniero Eléctrico y Licenciado en Ciencias de la Ingeniería Eléctrica en la Pontificia Universidad Católica de Valparaíso, con más de 4 años en el rubro eléctrico principalmente realizando Pruebas de Aceptación en Sitio a equipos primarios de subestaciones eléctricas, mantenimiento de transformadores de poder y en el Liderazgo de equipos de trabajo para el mantenimiento de infraestructura eléctrica, Control e Instrumentación en el Proyecto Mina Chuquicamata Subterránea. </p>
 
+                  
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Habilidades</p>
                     <p class="tab-links" onclick="opentab('experience')">Experiencia</p>
@@ -127,7 +132,7 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See more</a>
+        <a href="#" class="btn">Ver más</a>
     </div>
 </div>
 <!-- ----------contact------------- -->
@@ -138,17 +143,14 @@
                 <h1 class="sub-title">Contáctame</h1>
                 <p><i class="fas fa-paper-plane"></i> montt0202@gmail.com</p>
                 <p><i class="fas fa-phone-square-alt"></i> +56961457876</p>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/montt0202/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/carlosmontoyam/"><i class="fab fa-linkedin"></i></a>
-                </div>
+
                 <a href="images/my-cv.pdf" download class="btn btn2">Descarga mi Curriculum</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <input type="text" name="Name" placeholder="Escribe tu Nombre" required>
+                    <input type="email" name="Email" placeholder="Escribe tu Mail" required>
+                    <textarea name="Message" rows="6" placeholder="Escribe tu mensaje"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
                 <span id="msg"></span>
@@ -201,7 +203,7 @@
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => {
-            msg.innerHTML = "Message sent successfully"
+            msg.innerHTML = "Mensaje enviado correctamente"
             setTimeout(function(){
                 msg.innerHTML = ""
             },5000)
